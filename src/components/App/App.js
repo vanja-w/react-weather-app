@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <h1 className="text-center">Weather app</h1>
-        <Weather defaultCity="Berlin" />
+        <Weather defaultLocation="Berlin" />
         <footer>
           <a href="/">Open-source code</a> by Vanja Wallace
         </footer>
