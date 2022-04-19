@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import WeatherInfo from "../WeatherInfo/WeatherInfo";
 import "./Weather.css";
 import axios from "axios";
+import { TailSpin } from "react-loader-spinner";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -43,7 +44,6 @@ export default function Weather(props) {
           </div>
         </form>
         {/*SEARCH FORM ENDS*/}
-
         {/*WEATHER INFO STARTS*/}
         <WeatherInfo data={weatherData} />
         {/*WEATHER INFO ENDS*/}
@@ -55,6 +55,6 @@ export default function Weather(props) {
     let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiURL).then(handleResponse);
 
-    return "Loading...";
+    return <TailSpin color="lightblue" height={80} width={80} />;
   }
 }
