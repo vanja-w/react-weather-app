@@ -1,4 +1,5 @@
 import React from "react";
+import CurrentDate from "../CurrentDate/CurrentDate";
 
 export default function WeatherInfo(props) {
   return (
@@ -6,7 +7,7 @@ export default function WeatherInfo(props) {
       <div className="city text-center text-uppercase">
         {props.data.location}
       </div>
-      <div className="date text-center">Monday, 18 April</div>
+      <CurrentDate date={props.data.date} />
       <div className="row ">
         <div className="col-6">
           <div className="col">Weather icon</div>
