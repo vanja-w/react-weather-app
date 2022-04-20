@@ -1,27 +1,23 @@
 import React from "react";
 import CurrentDate from "../CurrentDate/CurrentDate";
+import "./WeatherInfo.css";
+import WeatherIcon from "../WeatherIcon/WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
-    <div className="WeatherInfo">
-      <div className="city text-center text-uppercase">
-        {props.data.location}
-      </div>
+    <div className="WeatherInfo mt-5">
+      <h2 className="city text-center text-uppercase">{props.data.location}</h2>
+      {/*CURRENT DATE STARTS*/}
       <CurrentDate date={props.data.date} />
+      {/*CURRENT DATE ENDS*/}
       <div className="row ">
         <div className="col-6">
-          <div className="col">Weather icon</div>
           <div className="col">
-            <p>{props.data.description}</p>
+            <WeatherIcon id={props.data.iconId} />
           </div>
+          <div className="col">{props.data.description}</div>
         </div>
-        <div className="col-6">
-          <div className="col">{Math.round(props.data.temperature)}°C</div>
-          <div className="col">
-            {Math.round(props.data.tempMin)}° | {Math.round(props.data.tempMax)}
-            °
-          </div>
-        </div>
+        <div className="col-6">{Math.round(props.data.temperature)}°C</div>
       </div>
       <div className="row">
         <div className="col">
@@ -32,7 +28,18 @@ export default function WeatherInfo(props) {
           Humidity
           <br /> {props.data.humidity}%
         </div>
-        <div className="col">Precipitation: 0%</div>
+        <div className="col">
+          <div className="col">
+            Min
+            <br />
+            {Math.round(props.data.tempMin)}°
+          </div>
+          <div className="col">
+            Max
+            <br />
+            {Math.round(props.data.tempMax)}°
+          </div>
+        </div>
       </div>
     </div>
   );
