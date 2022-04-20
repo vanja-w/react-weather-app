@@ -8,8 +8,15 @@ export default function App() {
       <div className="container">
         <h1 className="text-center">Weather app</h1>
         <Weather defaultLocation="Berlin" />
-        <footer>
-          <a href="/">Open-source code</a> by Vanja Wallace
+        <footer className="text-center mt-5">
+          <a
+            href="https://github.com/vanja-w/react-weather-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open-source code
+          </a>{" "}
+          by Vanja Wallace
         </footer>
       </div>
     </div>

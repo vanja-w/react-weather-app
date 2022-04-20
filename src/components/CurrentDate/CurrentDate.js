@@ -1,4 +1,5 @@
 import React from "react";
+import "./CurrentDate.css";
 
 export default function CurrentDate(props) {
   const days = [
