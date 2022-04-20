@@ -20,6 +20,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
+      iconId: response.data.weather[0].id,
     });
   }
 
@@ -40,7 +41,7 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather p-4">
+      <div className="Weather p-5 mt-5">
         {/*SEARCH FORM STARTS*/}
         <form onSubmit={handleSubmit}>
           <div className="row">
