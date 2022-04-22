@@ -1,4 +1,31 @@
 .WeatherInfo h2 {
   color: #243856;
   font-size: 45px;
+  letter-spacing: 2px;
+}
+
+.weather-data-details .col {
+  background-color: #24385612;
+  border-radius: 5px;
+}
+
+.WeatherInfo .min-temp,
+.WeatherInfo .max-temp {
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+.WeatherInfo .min-temp {
+  border-right: 1px solid;
+  border-color: #243856;
+}
+
+.WeatherInfo .weather-data-prop {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.WeatherInfo .weather-data-value {
+  font-size: 18px;
+  letter-spacing: 1px;
 }

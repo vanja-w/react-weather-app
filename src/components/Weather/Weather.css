@@ -10,9 +10,10 @@
 
 #weather-description {
   font-size: 20px;
+  letter-spacing: 1px;
 }
 
 #current-temp-celsius {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
 }
