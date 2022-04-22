@@ -7,3 +7,12 @@
   border-radius: 15px;
   color: #243856;
 }
+
+#weather-description {
+  font-size: 20px;
+}
+
+#current-temp-celsius {
+  font-size: 35px;
+  font-weight: bold;
+}
