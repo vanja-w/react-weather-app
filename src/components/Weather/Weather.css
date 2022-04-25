@@ -17,3 +17,24 @@
   font-size: 50px;
   font-weight: bold;
 }
+
+.input-field {
+  border: none;
+  border-radius: 5px;
+  padding: 0px 15px;
+}
+
+.search-button {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #243856;
+  background-color: #ffe15c;
+  border-color: #ffe15c;
+  font-weight: 600;
+}
+
+.search-button:hover {
+  transition: all 200ms ease-in-out;
+  background-color: #f5c800;
+  border-color: #f5c800;
+}

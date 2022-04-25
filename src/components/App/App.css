@@ -2,3 +2,8 @@
   max-width: 600px;
   margin: 100px auto;
 }
+
+footer {
+  opacity: 0.9;
+  font-size: 14px;
+}
