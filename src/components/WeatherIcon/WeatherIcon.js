@@ -69,7 +69,10 @@ export default function WeatherIcon(props) {
 
   return (
     <div className="WeatherIcon">
-      <i className={`wi wi-${dataMapping[props.id]}`}></i>
+      <i
+        className={`wi wi-${dataMapping[props.id]}`}
+        style={{ fontSize: `${props.size}px` }} //enables changing the size of the icon by passing the (size) number to the component each time we use the component
+      ></i>
     </div>
   );
 }
