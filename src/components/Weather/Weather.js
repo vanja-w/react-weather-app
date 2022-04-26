@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "../WeatherInfo/WeatherInfo";
+import WeatherForecast from "../WeatherForecast/WeatherForecast";
 import "./Weather.css";
 import axios from "axios";
 import { TailSpin } from "react-loader-spinner";
@@ -21,6 +22,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
       iconId: response.data.weather[0].id,
+      coordinates: response.data.coord,
     });
   }
 
@@ -68,6 +70,9 @@ export default function Weather(props) {
         {/*WEATHER INFO STARTS*/}
         <WeatherInfo data={weatherData} />
         {/*WEATHER INFO ENDS*/}
+        {/*WEATHER FORECAST BEGINS*/}
+        <WeatherForecast coordinates={weatherData.coordinates} />
+        {/*WEATHER FORECAST ENDS*/}
       </div>
     );
   } else {

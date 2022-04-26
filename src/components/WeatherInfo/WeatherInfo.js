@@ -6,36 +6,36 @@ import WeatherIcon from "../WeatherIcon/WeatherIcon";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo mt-5">
-      <h2 className="city text-center text-uppercase mb-3">
+      <h2 className="city text-center text-uppercase mb-2">
         {props.data.location}
       </h2>
       {/*CURRENT DATE STARTS*/}
       <CurrentDate date={props.data.date} />
       {/*CURRENT DATE ENDS*/}
 
-      <div className="row d-flex flex-column m-4">
+      <div className="row d-flex flex-column mb-4">
         <div className="col d-flex flex-column">
           <div
-            className="col d-flex justify-content-center"
+            className="col d-flex mb-3 justify-content-center"
             id="current-temp-celsius"
           >
             {Math.round(props.data.temperature)}°C
           </div>
 
-          <div className="col d-flex justify-content-center">
-            <WeatherIcon id={props.data.iconId} />
+          <div className="col d-flex mb-2 justify-content-center">
+            <WeatherIcon id={props.data.iconId} size={120} />
           </div>
         </div>
 
         <div
-          className="col d-flex justify-content-center"
+          className="col d-flex mt-4 justify-content-center"
           id="weather-description"
         >
           {props.data.description}
         </div>
       </div>
 
-      <div className="row d-flex mx-4 weather-data-details">
+      <div className="row d-flex m-0 weather-data-details">
         <div className="col d-flex border align-items-center flex-column p-2">
           <div className="weather-data-prop">wind</div>
           <div className="weather-data-value">

@@ -34,7 +34,7 @@ export default function CurrentDate(props) {
 
   return (
     <div className="CurrentDate">
-      <div className="date text-center">
+      <div className="date text-center mb-2">
         {day}, {dayOfMonth} {month}
       </div>
     </div>
