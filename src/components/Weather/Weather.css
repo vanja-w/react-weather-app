@@ -1,9 +1,5 @@
 .Weather {
-  background: linear-gradient(
-    0deg,
-    hsla(186, 33%, 94%, 1) 10%,
-    hsla(216, 41%, 79%, 1) 100%
-  );
+  background: linear-gradient(0deg, hsla(186, 33%, 94%, 1) 10%, #b3c5df 100%);
   border-radius: 15px;
   color: #243856;
 }
@@ -37,4 +33,11 @@
   transition: all 200ms ease-in-out;
   background-color: #f5c800;
   border-color: #f5c800;
+}
+
+.loading-text {
+  font-size: 20px;
+  color: #b3c5df;
+  letter-spacing: 2px;
+  font-weight: bold;
 }

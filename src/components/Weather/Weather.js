@@ -78,6 +78,11 @@ export default function Weather(props) {
   } else {
     //API CALL
     searchLocation();
-    return <TailSpin color="lightblue" height={80} width={80} />;
+    return (
+      <div>
+        <TailSpin color="#b3c5df" height={150} width={150} />
+        <div className="loading-text d-flex mt-5">Loading...</div>
+      </div>
+    );
   }
 }
