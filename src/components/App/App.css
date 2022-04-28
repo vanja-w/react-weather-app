@@ -7,9 +7,3 @@ footer {
   opacity: 0.9;
   font-size: 14px;
 }
-
-#root > div > div > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}

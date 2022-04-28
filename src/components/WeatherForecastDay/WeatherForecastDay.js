@@ -13,12 +13,12 @@ export default function WeatherForecastDay(props) {
   return (
     <div className="WeatherForecastDay d-flex flex-column">
       <div className="day d-flex justify-content-center mb-2">{day()}</div>
-      <WeatherIcon id={props.data.weather[0].id} size={50} />
+      <WeatherIcon id={props.data.weather[0].id} size={40} />
       <div className="col d-flex temp mt-2">
-        <div className="min-temp col d-flex align-items-center flex-column">
+        <div className="min-temp col d-flex align-items-start flex-column">
           {Math.round(props.data.temp.min)}°
         </div>
-        <div className="max-temp col d-flex align-items-center flex-column">
+        <div className="max-temp col d-flex align-items-end flex-column">
           {Math.round(props.data.temp.max)}°
         </div>
       </div>

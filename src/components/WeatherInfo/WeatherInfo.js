@@ -36,17 +36,17 @@ export default function WeatherInfo(props) {
       </div>
 
       <div className="row d-flex m-0 weather-data-details">
-        <div className="col d-flex border align-items-center flex-column p-2">
+        <div className="col d-flex align-items-center flex-column p-2">
           <div className="weather-data-prop">wind</div>
           <div className="weather-data-value">
             {Math.round(props.data.wind)} km/h
           </div>
         </div>
-        <div className="col d-flex border mx-4 align-items-center flex-column p-2">
+        <div className="col d-flex mx-4 align-items-center flex-column p-2">
           <div className="weather-data-prop">humidity</div>
           <div className="weather-data-value">{props.data.humidity}%</div>
         </div>
-        <div className="col d-flex border p-2">
+        <div className="col d-flex p-2">
           <div className="min-temp col d-flex align-items-center flex-column">
             <div className="weather-data-prop">min</div>
             <div className="weather-data-value">

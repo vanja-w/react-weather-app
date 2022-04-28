@@ -1,0 +1,7 @@
+.WeatherForecast .forecast-day-col {
+  border-right: 1px solid #24385672;
+}
+
+.WeatherForecast .forecast-day-col:nth-child(5n) {
+  border-right: none;
+}
